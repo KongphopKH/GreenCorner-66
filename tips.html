@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>พื้นฐานการปลูกในที่แคบ | GreenCorner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GreenCorner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tips.html">พื้นฐาน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plants.html">แนะนำต้นไม้</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">แกลเลอรี</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-success btn-sm"
+                           href="#"
+                           data-bs-toggle="modal"
+                           data-bs-target="#contactModal">
+                            ติดต่อ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="section-padding">
+        <div class="container">
+            <header class="mb-4">
+                <h1 class="section-title">พื้นฐานการปลูกต้นไม้ในที่แคบ</h1>
+                <p class="section-subtitle text-readable">
+                    เริ่มจากเข้าใจข้อจำกัดของพื้นที่ และใช้ข้อดีให้เป็นจุดแข็ง
+                    ด้านล่างนี้คือคำถามยอดฮิตที่มักเจอเมื่อเริ่มปลูกในห้อง คอนโด หรือระเบียงเล็ก ๆ
+                </p>
+            </header>
+
+            <article class="mb-5 text-readable">
+                <h2 class="h5 mb-3">มองภาพรวม: 4 ปัจจัยหลัก</h2>
+                <ul>
+                    <li><strong>แสง</strong> – แดดจัด แดดรำไร หรือแทบไม่มีแดด</li>
+                    <li><strong>น้ำ</strong> – มีเวลารดน้ำบ่อยไหม / มีโอกาสลืมหรือไม่</li>
+                    <li><strong>ลมและอากาศ</strong> – ห้องปิด ห้องแอร์ หรือมีลมโกรก</li>
+                    <li><strong>พื้นที่วางต้นไม้</strong> – ชั้นวาง ระเบียง ขอบหน้าต่าง หรือผนัง</li>
+                </ul>
+            </article>
+
+            <!-- Accordion: Component Collapse -->
+            <section aria-label="คำถามที่พบบ่อยเกี่ยวกับการปลูกในที่แคบ">
+                <h2 class="h4 mb-3">คำถามที่พบบ่อย (กดเพื่อเปิด/ปิดรายละเอียด)</h2>
+                <div class="accordion" id="tipsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingLight">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLight">
+                                ถ้าห้องแทบไม่มีแดด ปลูกอะไรได้บ้าง?
+                            </button>
+                        </h2>
+                        <div id="collapseLight" class="accordion-collapse collapse show" data-bs-parent="#tipsAccordion">
+                            <div class="accordion-body">
+                                เลือกต้นไม้ทนร่ม เช่น เดหลี พลูด่าง ลิ้นมังกร หรือเฟิร์นบางชนิด
+                                และพยายามให้ได้รับแสงทางอ้อมบ้าง เช่น เปิดผ้าม่าน หรือใช้ไฟปลูกต้นไม้ช่วย
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingWater">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWater">
+                                ไม่มีเวลา นั่งทำงานทั้งวัน กลัวลืมรดน้ำ ทำอย่างไรดี?
+                            </button>
+                        </h2>
+                        <div id="collapseWater" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                            <div class="accordion-body">
+                                เลือกต้นไม้ที่ชอบดินแห้ง เช่น ไม้อวบน้ำ แคคตัส หรือใช้กระถางที่มีจานรองลึก
+                                และจัดตารางแจ้งเตือนในมือถือ เช่น ทุก 3–4 วันตรวจดูความชื้นดินด้วยการเอานิ้วจิ้มลงไปเล็กน้อย
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPot">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePot">
+                                พื้นที่แคบมาก วางกระถางได้ไม่กี่ใบ ทำอย่างไรให้ดูไม่รก?
+                            </button>
+                        </h2>
+                        <div id="collapsePot" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                            <div class="accordion-body">
+                                ใช้ชั้นวางแนวตั้ง แขวนกระถาง หรือทำสวนแนวตั้งบนผนัง
+                                เลือกกระถางสีใกล้เคียงกันและขนาดไม่ใหญ่เกินไป
+                                จะช่วยให้ภาพรวมดูเรียบร้อยและสบายตามากขึ้น
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSoil">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoil">
+                                ดินแบบไหนเหมาะกับการปลูกในกระถางเล็ก ๆ ?
+                            </button>
+                        </h2>
+                        <div id="collapseSoil" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                            <div class="accordion-body">
+                                ดินควรโปร่ง ระบายน้ำดี ไม่อัดแน่นจนเกินไป
+                                สามารถผสมดินปลูกสำเร็จรูปกับกาบมะพร้าวสับ เพอร์ไลต์ หรือหินภูเขาไฟเล็กน้อย
+                                เพื่อช่วยให้รากหายใจสะดวกและไม่อมน้ำเกินไป
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p class="mb-1">© 2025 GreenCorner</p>
+        <p class="mb-0">พื้นฐานการปลูกต้นไม้ในพื้นที่จำกัด</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenCorner | ปลูกต้นไม้ในที่แคบ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GreenCorner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tips.html">พื้นฐาน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plants.html">แนะนำต้นไม้</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">แกลเลอรี</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-success btn-sm"
+                           href="#"
+                           data-bs-toggle="modal"
+                           data-bs-target="#contactModal">
+                            ติดต่อ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero คลีน ๆ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://f.ptcdn.info/260/047/000/ogpu9piamf8Al7Bd0I3-o.jpg" class="d-block w-100" alt="สวนระเบียงเล็ก ๆ">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://grandu.space/uploads/2021/06/804e59c0-c4e7-11eb-aad1-8798ef2ec54f.jpg" class="d-block w-100" alt="สมุนไพรในครัว">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.livinginsider.com/images/articles/5de099cf5a57e_2162/Vertical-Garden.jpg" class="d-block w-100" alt="สวนแนวตั้งบนผนัง">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-1">
+                    <article class="hero-text">
+                        <p class="hero-small mb-2">พื้นที่เล็ก ไม่ได้แปลว่าปลูกต้นไม้ไม่ได้</p>
+                        <h1 class="hero-title mb-3">ปลูกต้นไม้ในที่แคบ<br>ได้ง่ายกว่าที่คิด</h1>
+                        <p class="hero-subtitle mb-4">
+                            ไม่ว่าคุณจะอยู่หอพัก คอนโด หรือบ้านที่มีพื้นที่จำกัด
+                            คุณก็มีมุมสีเขียวเล็ก ๆ เป็นของตัวเองได้
+                            แค่เลือกต้นไม้และวิธีจัดวางให้เหมาะกับแสงและพื้นที่ของคุณ
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="tips.html" class="btn btn-success btn-lg">เริ่มจากพื้นฐาน</a>
+                            <a href="plants.html" class="btn btn-outline-success btn-lg">ดูต้นไม้ที่แนะนำ</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section แนะนำเนื้อหาแบบเรียบ ๆ -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <header class="text-center mb-5">
+                <h2 class="section-title mb-2">สำรวจ GreenCorner</h2>
+                <p class="section-subtitle mx-auto">
+                    เลือกหัวข้อที่ตรงกับเป้าหมายของคุณ แล้วค่อย ๆ เติมสีเขียวให้มุมเล็ก ๆ ในบ้านทีละนิด
+                </p>
+            </header>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card custom-card h-100">
+                        <img src="https://www.dictionary.com/e/wp-content/uploads/2020/01/WisdomvsKnowledge_1000x700_jpg_OHVUvmTo.jpg" class="card-img-top" alt="พื้นฐานการปลูก">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">พื้นฐานการปลูกในที่แคบ</h3>
+                            <p class="card-text mb-3">
+                                เข้าใจเรื่องแสง น้ำ ดิน และภาชนะปลูก
+                                แบบอ่านง่าย พร้อมตัวอย่างสถานการณ์จริง
+                            </p>
+                            <a href="tips.html" class="btn btn-outline-success">อ่านพื้นฐาน</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card custom-card h-100">
+                        <img src="https://www.apthai.com/images/production/xQF4QVa13rUZ6Lh0e6jdrCNJYQw7iYWa5EnKNaTo.jpg" class="card-img-top" alt="แนะนำต้นไม้">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">ต้นไม้สำหรับพื้นที่จำกัด</h3>
+                            <p class="card-text mb-3">
+                                รวมต้นไม้ที่ดูแลง่าย เหมาะกับคอนโดและห้องเช่า
+                                มีทั้งคำแนะนำและลิงก์ไปดูตัวอย่างร้านค้าออนไลน์
+                            </p>
+                            <a href="plants.html" class="btn btn-outline-success">ดูต้นไม้ที่แนะนำ</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card custom-card h-100">
+                        <img src="https://www.bangkokassets.com/details/news/187/%E0%B8%9B%E0%B8%81%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A.jpg" class="card-img-top" alt="แกลเลอรี">
+                        <div class="card-body">
+                            <h3 class="card-title h5 mb-2">ไอเดียมุมสวน & ปรึกษา</h3>
+                            <p class="card-text mb-3">
+                                ดูตัวอย่างมุมสวนจริงจากไอเดียต่าง ๆ
+                                และส่งคำถามหรือรูปมุมบ้านของคุณมาปรึกษาเราได้
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="gallery.html" class="btn btn-outline-success">ดูแกลเลอรี</a>
+                                <button class="btn btn-success"
+                                        type="button"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#contactModal">
+                                    ติดต่อเรา
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p class="mb-1">© 2025 GreenCorner – พื้นที่สีเขียวเล็ก ๆ ของคุณ</p>
+        <p class="mb-0">ออกแบบเพื่อสาธิตการใช้ Semantic HTML และ Bootstrap Components</p>
+    </div>
+</footer>
+
+<!-- Contact Modal (Popup) -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <article class="modal-content">
+      <header class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">ติดต่อ / ขอคำปรึกษาเรื่องการปลูกต้นไม้</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </header>
+
+      <div class="modal-body">
+        <p class="text-muted mb-3">
+          กรอกรายละเอียดสั้น ๆ เกี่ยวกับพื้นที่ของคุณ แล้วเราจะช่วยแนะนำต้นไม้ที่เหมาะให้เป็นไอเดีย 😊
+        </p>
+
+        <!-- ฟอร์มติดต่อ -->
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="contactName" class="form-label">ชื่อของคุณ</label>
+              <input type="text" id="contactName" class="form-control" placeholder="เช่น ก้องภพ">
+            </div>
+            <div class="col-md-6">
+              <label for="contactEmail" class="form-label">อีเมลติดต่อกลับ</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com">
+            </div>
+
+            <div class="col-md-6">
+              <label for="contactSpaceType" class="form-label">ลักษณะพื้นที่ปลูก</label>
+              <select id="contactSpaceType" class="form-select">
+                <option selected disabled>เลือกประเภทพื้นที่</option>
+                <option>ระเบียงคอนโด</option>
+                <option>ห้องนอน</option>
+                <option>โต๊ะทำงาน</option>
+                <option>มุมในครัว</option>
+                <option>อื่น ๆ</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="contactLight" class="form-label">แสงที่มีในพื้นที่</label>
+              <select id="contactLight" class="form-select">
+                <option selected disabled>เลือกประเภทแสง</option>
+                <option>แดดจัดครึ่งวัน</option>
+                <option>แดดอ่อน / แดดรำไร</option>
+                <option>แทบไม่มีแดด ได้แค่แสงห้อง</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label for="contactMessage" class="form-label">รายละเอียดเพิ่มเติม</label>
+              <textarea id="contactMessage" rows="4" class="form-control"
+                        placeholder="เช่น อยากปลูกต้นไม้ 3–4 ต้น เน้นดูแลง่าย วางริมหน้าต่างในห้องนอน"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+        <button type="button" class="btn btn-success">ส่งข้อความ</button>
+      </footer>
+    </article>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

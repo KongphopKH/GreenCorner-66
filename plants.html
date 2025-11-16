@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ต้นไม้แนะนำ | GreenCorner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GreenCorner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tips.html">พื้นฐาน</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="plants.html">แนะนำต้นไม้</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">แกลเลอรี</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-success btn-sm"
+                           href="#"
+                           data-bs-toggle="modal"
+                           data-bs-target="#contactModal">
+                            ติดต่อ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="section-padding">
+        <div class="container">
+            <header class="mb-4 text-center">
+                <h1 class="section-title">ต้นไม้แนะนำสำหรับพื้นที่เล็ก</h1>
+                <p class="section-subtitle text-readable mx-auto">
+                    รวมต้นไม้ 6 ชนิดที่ปลูกในที่แคบได้จริง เหมาะกับคอนโด ห้องพัก โต๊ะทำงาน หรือระเบียงเล็ก ๆ<br>
+                    แต่ละการ์ดมีป้ายแท็กบอกระดับความยาก และมีปุ่มลิงก์ไปดูตัวอย่างร้านค้าออนไลน์ต่อได้
+                </p>
+            </header>
+
+            <!-- Carousel แสดงการ์ด 3 ใบต่อ 1 สไลด์ -->
+            <div id="plantCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <!-- สไลด์ 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <!-- 1. ลิ้นมังกร -->
+                            <div class="col-md-4">
+                                <article class="card custom-card h-100">
+                                    <img src="https://s359.kapook.com/pagebuilder/0aa3a8b6-092c-4c8a-b23b-8e6a70b56198.jpg"
+                                         class="card-img-top" alt="ลิ้นมังกร">
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h5">ลิ้นมังกร</h2>
+                                        <div class="mb-2 d-flex flex-wrap gap-1">
+                                            <span class="badge bg-success">มือใหม่</span>
+                                            <span class="badge bg-secondary">ทนร่ม</span>
+                                            <span class="badge bg-info text-dark">รดน้ำน้อย</span>
+                                        </div>
+                                        <p class="card-text flex-grow-1">
+                                            ไม้ทนถึกอันดับหนึ่ง อยู่ได้ทั้งห้องแสงน้อยและระเบียง
+                                            เหมาะกับมือใหม่มาก ๆ
+                                        </p>
+                                        <div class="d-flex flex-wrap gap-2 mt-2">
+                                            <button class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal" data-bs-target="#plant1Modal">
+                                                ดูรายละเอียด
+                                            </button>
+                                            <!-- ลิงก์ตัวอย่าง: เปลี่ยน URL เป็นร้านที่ต้องการได้ -->
+                                            <a class="btn btn-outline-success btn-sm"
+                                               href="https://shopee.co.th/list/%E0%B8%A5%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3"
+                                               target="_blank" rel="noopener">
+                                                สั่งซื้อออนไลน์
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 2. พลูด่าง -->
+                            <div class="col-md-4">
+                                <article class="card custom-card h-100">
+                                    <img src="https://www.fashionisland.co.th/wp-content/uploads/2020/11/fashionisland-epipremnum-aureum.jpg"
+                                         class="card-img-top" alt="พลูด่าง">
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h5">พลูด่าง</h2>
+                                        <div class="mb-2 d-flex flex-wrap gap-1">
+                                            <span class="badge bg-success">มือใหม่</span>
+                                            <span class="badge bg-secondary">ทนร่ม</span>
+                                            <span class="badge bg-warning text-dark">สวนแนวตั้ง</span>
+                                        </div>
+                                        <p class="card-text flex-grow-1">
+                                            ไม้เลื้อยยอดฮิต แขวนก็สวย ทำสวนแนวตั้งก็ได้
+                                            อยู่ร่มได้ดี แค่มีแสงรำไร
+                                        </p>
+                                        <div class="d-flex flex-wrap gap-2 mt-2">
+                                            <button class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal" data-bs-target="#plant2Modal">
+                                                ดูรายละเอียด
+                                            </button>
+                                            <a class="btn btn-outline-success btn-sm"
+                                               href="https://shopee.co.th/list/%E0%B8%9E%E0%B8%A5%E0%B8%B9%E0%B8%94%E0%B9%88%E0%B8%B2%E0%B8%87"
+                                               target="_blank" rel="noopener">
+                                                สั่งซื้อออนไลน์
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 3. กวักมรกต (ZZ plant) -->
+                            <div class="col-md-4">
+                                <article class="card custom-card h-100">
+                                    <img src="https://www.picturethisai.com/image-handle/website_cmsname/image/1080/348133526285484032.jpeg?x-oss-process=image/format,webp/resize,s_800&v=1.0"
+                                         class="card-img-top" alt="กวักมรกต">
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h5">กวักมรกต (ZZ plant)</h2>
+                                        <div class="mb-2 d-flex flex-wrap gap-1">
+                                            <span class="badge bg-success">มือใหม่</span>
+                                            <span class="badge bg-secondary">ทนร่ม</span>
+                                            <span class="badge bg-info text-dark">รดน้ำน้อย</span>
+                                        </div>
+                                        <p class="card-text flex-grow-1">
+                                            ใบมันวาวสวย อยู่ร่มได้ดีมาก รดน้ำน้อย
+                                            เหมาะกับวางในห้องทำงานหรือห้องแอร์
+                                        </p>
+                                        <div class="d-flex flex-wrap gap-2 mt-2">
+                                            <button class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal" data-bs-target="#plant3Modal">
+                                                ดูรายละเอียด
+                                            </button>
+                                            <a class="btn btn-outline-success btn-sm"
+                                               href="https://shopee.co.th/list/%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%81%E0%B8%A7%E0%B8%B1%E0%B8%81%E0%B8%A1%E0%B8%A3%E0%B8%81%E0%B8%95"
+                                               target="_blank" rel="noopener">
+                                                สั่งซื้อออนไลน์
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- สไลด์ 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <!-- 4. เดหลี -->
+                            <div class="col-md-4">
+                                <article class="card custom-card h-100">
+                                    <img src="https://tipsoftree.com/wp-content/uploads/2024/03/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%84%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B5.jpg"
+                                         class="card-img-top" alt="เดหลี">
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h5">เดหลี</h2>
+                                        <div class="mb-2 d-flex flex-wrap gap-1">
+                                            <span class="badge bg-primary">สวยงาม</span>
+                                            <span class="badge bg-secondary">ทนร่ม</span>
+                                            <span class="badge bg-warning text-dark">ต้องรดน้ำสม่ำเสมอ</span>
+                                        </div>
+                                        <p class="card-text flex-grow-1">
+                                            ดอกสีขาวเรียบหรู ชอบแสงรำไร
+                                            วางในห้องนั่งเล่นหรือมุมอ่านหนังสือได้สบาย
+                                        </p>
+                                        <div class="d-flex flex-wrap gap-2 mt-2">
+                                            <button class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal" data-bs-target="#plant4Modal">
+                                                ดูรายละเอียด
+                                            </button>
+                                            <a class="btn btn-outline-success btn-sm"
+                                               href="https://shopee.co.th/list/%E0%B9%80%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B5"
+                                               target="_blank" rel="noopener">
+                                                สั่งซื้อออนไลน์
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 5. เศรษฐีเรือนใน / Spider plant -->
+                            <div class="col-md-4">
+                                <article class="card custom-card h-100">
+                                    <img src="https://www.sgethai.com/wp-content/uploads/2023/11/1_result-7.webp"
+                                         class="card-img-top" alt="เศรษฐีเรือนใน">
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h5">เศรษฐีเรือนใน (Spider plant)</h2>
+                                        <div class="mb-2 d-flex flex-wrap gap-1">
+                                            <span class="badge bg-success">มือใหม่</span>
+                                            <span class="badge bg-secondary">ทนร่ม</span>
+                                            <span class="badge bg-info text-dark">แตกหน่อง่าย</span>
+                                        </div>
+                                        <p class="card-text flex-grow-1">
+                                            ใบเรียวยาวมีลายสวย แขวนหรือวางชั้นก็ได้
+                                            ทนมือ ทนสภาพห้องได้ดี
+                                        </p>
+                                        <div class="d-flex flex-wrap gap-2 mt-2">
+                                            <button class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal" data-bs-target="#plant5Modal">
+                                                ดูรายละเอียด
+                                            </button>
+                                            <a class="btn btn-outline-success btn-sm"
+                                               href="https://shopee.co.th/list/%E0%B9%80%E0%B8%A8%E0%B8%A3%E0%B8%A9%E0%B8%90%E0%B8%B5%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B9%83%E0%B8%99"
+                                               target="_blank" rel="noopener">
+                                                สั่งซื้อออนไลน์
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 6. เฟิร์นบอสตัน -->
+                            <div class="col-md-4">
+                                <article class="card custom-card h-100">
+                                    <img src="https://omgnadinechristine.com/wp-content/uploads/2020/08/%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%9A%E0%B8%AD%E0%B8%AA%E0%B8%95%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99-Boston-Fern-%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%81%E0%B9%88-1.jpg"
+                                         class="card-img-top" alt="เฟิร์นบอสตัน">
+                                    <div class="card-body d-flex flex-column">
+                                        <h2 class="card-title h5">เฟิร์นบอสตัน</h2>
+                                        <div class="mb-2 d-flex flex-wrap gap-1">
+                                            <span class="badge bg-warning text-dark">ระดับปานกลาง</span>
+                                            <span class="badge bg-secondary">ทนร่ม</span>
+                                            <span class="badge bg-info text-dark">ชอบความชื้น</span>
+                                        </div>
+                                        <p class="card-text flex-grow-1">
+                                            ใบฟูฟ่อง ดูนุ่มนวลมาก เหมาะกับระเบียงหรือมุมชื้น ๆ
+                                            ที่มีแสงรำไรและลมพัด
+                                        </p>
+                                        <div class="d-flex flex-wrap gap-2 mt-2">
+                                            <button class="btn btn-success btn-sm"
+                                                    data-bs-toggle="modal" data-bs-target="#plant6Modal">
+                                                ดูรายละเอียด
+                                            </button>
+                                            <a class="btn btn-outline-success btn-sm"
+                                               href="https://shopee.co.th/search?keyword=%E0%B9%80%E0%B8%9F%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%9A%E0%B8%AD%E0%B8%AA%E0%B8%95%E0%B8%B1%E0%B8%99"
+                                               target="_blank" rel="noopener">
+                                                สั่งซื้อออนไลน์
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ปุ่มเลื่อนสไลด์ -->
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#plantCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#plantCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <p class="mt-3 text-muted small text-center">
+                * ถ้าเปิดในจอมือถือ การ์ดจะเรียงทีละใบ แต่ยังเลื่อนไปสไลด์ถัดไปได้เหมือนเดิม<br>
+                * ลิงก์สั่งซื้อเป็นเพียงตัวอย่าง คุณสามารถแก้ไขให้เป็นร้าน / แพลตฟอร์มที่ต้องการได้เอง
+            </p>
+        </div>
+    </section>
+</main>
+
+<!-- Modals: รายละเอียดแต่ละต้น (เหลือแค่ 6 ต้น) -->
+<div class="modal fade" id="plant1Modal" tabindex="-1" aria-labelledby="plant1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <article class="modal-content">
+            <header class="modal-header">
+                <h1 class="modal-title fs-5" id="plant1Label">ลิ้นมังกร</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p><strong>แสง:</strong> อยู่ได้ตั้งแต่แสงในห้อง แสงรำไร จนถึงแดดอ่อน</p>
+                <p><strong>น้ำ:</strong> รดน้ำทุก 1–2 สัปดาห์ หรือเมื่อดินแห้งสนิท</p>
+                <p><strong>จุดเด่น:</strong> ทนมือ ทนแล้ง ดูแลง่ายมาก เหมาะกับมือใหม่สุด ๆ</p>
+                <p>ใช้ดินโปร่งและกระถางมีรูระบายน้ำดี อย่ารดน้ำบ่อยจนดินแฉะเพื่อป้องกันรากเน่า</p>
+            </div>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+            </footer>
+        </article>
+    </div>
+</div>
+
+<div class="modal fade" id="plant2Modal" tabindex="-1" aria-labelledby="plant2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <article class="modal-content">
+            <header class="modal-header">
+                <h1 class="modal-title fs-5" id="plant2Label">พลูด่าง</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p><strong>แสง:</strong> แสงรำไร แดดอ่อน หลีกเลี่ยงแดดจ้าโดยตรงนาน ๆ</p>
+                <p><strong>น้ำ:</strong> รดน้ำสัปดาห์ละ 2–3 ครั้ง หรือเมื่อหน้าดินเริ่มแห้ง</p>
+                <p><strong>จุดเด่น:</strong> เลื้อยสวย ทำสวนแนวตั้งหรือแขวนก็ปัง</p>
+                <p>ถ้าปลูกในน้ำก็ได้เหมือนกัน เหมาะกับวางในห้องหรือโต๊ะทำงานที่อยากให้ดูสดชื่นขึ้น</p>
+            </div>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+            </footer>
+        </article>
+    </div>
+</div>
+
+<div class="modal fade" id="plant3Modal" tabindex="-1" aria-labelledby="plant3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <article class="modal-content">
+            <header class="modal-header">
+                <h1 class="modal-title fs-5" id="plant3Label">กวักมรกต (ZZ plant)</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p><strong>แสง:</strong> แสงในห้อง แสงรำไร อยู่ร่มได้ดีมาก</p>
+                <p><strong>น้ำ:</strong> รดน้ำไม่บ่อย ทุก 2 สัปดาห์ หรือเมื่อดินแห้ง</p>
+                <p><strong>จุดเด่น:</strong> ใบหนาเก็บน้ำได้ ทนแล้งและทนสภาพห้องแอร์</p>
+                <p>เหมาะกับการวางมุมออฟฟิศ หรือโต๊ะทำงานที่มีแสงไฟแต่ไม่ค่อยมีแดดจริง</p>
+            </div>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+            </footer>
+        </article>
+    </div>
+</div>
+
+<div class="modal fade" id="plant4Modal" tabindex="-1" aria-labelledby="plant4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <article class="modal-content">
+            <header class="modal-header">
+                <h1 class="modal-title fs-5" id="plant4Label">เดหลี</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p><strong>แสง:</strong> แสงรำไร ไม่ต้องเจอแดดตรง ๆ</p>
+                <p><strong>น้ำ:</strong> รดน้ำให้ดินชื้นสม่ำเสมอ แต่อย่าแฉะ</p>
+                <p><strong>จุดเด่น:</strong> ดอกสีขาวสวย ให้ฟีลสงบ เรียบหรู</p>
+                <p>เหมาะกับมุมรับแขก ห้องนอน หรือมุมอ่านหนังสือ เพิ่มความนุ่มนวลให้บรรยากาศในห้อง</p>
+            </div>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+            </footer>
+        </article>
+    </div>
+</div>
+
+<div class="modal fade" id="plant5Modal" tabindex="-1" aria-labelledby="plant5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <article class="modal-content">
+            <header class="modal-header">
+                <h1 class="modal-title fs-5" id="plant5Label">เศรษฐีเรือนใน (Spider plant)</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p><strong>แสง:</strong> แสงรำไร หรือแสงในห้องก็อยู่ได้</p>
+                <p><strong>น้ำ:</strong> รดน้ำสม่ำเสมอ เมื่อหน้าดินเริ่มแห้ง</p>
+                <p><strong>จุดเด่น:</strong> แตกหน่อเก่ง นำไปชำแจกเพื่อนได้</p>
+                <p>เหมาะกับการแขวนริมหน้าต่าง หรือวางชั้นสูง ๆ ให้ใบห้อยลงมา ดูพลิ้วสวยมาก</p>
+            </div>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+            </footer>
+        </article>
+    </div>
+</div>
+
+<div class="modal fade" id="plant6Modal" tabindex="-1" aria-labelledby="plant6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <article class="modal-content">
+            <header class="modal-header">
+                <h1 class="modal-title fs-5" id="plant6Label">เฟิร์นบอสตัน</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p><strong>แสง:</strong> แสงรำไร ไม่ชอบแดดแรง</p>
+                <p><strong>น้ำ:</strong> ชอบความชื้น ควรรดน้ำบ่อยกว่าต้นอื่นเล็กน้อย</p>
+                <p><strong>จุดเด่น:</strong> ใบฟูฟ่อง ทำให้มุมเล็ก ๆ ดูเขียวชุ่ม</p>
+                <p>ถ้าห้องแห้งมาก สามารถพ่นละอองน้ำบาง ๆ ที่ใบเป็นครั้งคราวช่วยเพิ่มความชื้นได้</p>
+            </div>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+            </footer>
+        </article>
+    </div>
+</div>
+
+<!-- Contact Modal (popup) ถ้ายังไม่ได้ใส่ในไฟล์นี้ ให้เพิ่มด้วย -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <article class="modal-content">
+      <header class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">ติดต่อ / ขอคำปรึกษาเรื่องการปลูกต้นไม้</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </header>
+      <div class="modal-body">
+        <p class="text-muted mb-3">
+          กรอกรายละเอียดสั้น ๆ เกี่ยวกับพื้นที่ของคุณ แล้วเราจะช่วยแนะนำต้นไม้ที่เหมาะให้เป็นไอเดีย 😊
+        </p>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="contactName" class="form-label">ชื่อของคุณ</label>
+              <input type="text" id="contactName" class="form-control" placeholder="เช่น ก้องภพ">
+            </div>
+            <div class="col-md-6">
+              <label for="contactEmail" class="form-label">อีเมลติดต่อกลับ</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com">
+            </div>
+            <div class="col-md-6">
+              <label for="contactSpaceType" class="form-label">ลักษณะพื้นที่ปลูก</label>
+              <select id="contactSpaceType" class="form-select">
+                <option selected disabled>เลือกประเภทพื้นที่</option>
+                <option>ระเบียงคอนโด</option>
+                <option>ห้องนอน</option>
+                <option>โต๊ะทำงาน</option>
+                <option>มุมในครัว</option>
+                <option>อื่น ๆ</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="contactLight" class="form-label">แสงที่มีในพื้นที่</label>
+              <select id="contactLight" class="form-select">
+                <option selected disabled>เลือกประเภทแสง</option>
+                <option>แดดจัดครึ่งวัน</option>
+                <option>แดดอ่อน / แดดรำไร</option>
+                <option>แทบไม่มีแดด ได้แค่แสงห้อง</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="contactMessage" class="form-label">รายละเอียดเพิ่มเติม</label>
+              <textarea id="contactMessage" rows="4" class="form-control"
+                        placeholder="เช่น อยากปลูกต้นไม้ 3–4 ต้น เน้นดูแลง่าย วางริมหน้าต่างในห้องนอน"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+        <button type="button" class="btn btn-success">ส่งข้อความ</button>
+      </footer>
+    </article>
+  </div>
+</div>
+
+<footer>
+    <div class="container text-center">
+        <p class="mb-1">© 2025 GreenCorner</p>
+        <p class="mb-0">ตัวอย่างการใช้ Carousel + Card + Badge + Modal + ลิงก์สั่งซื้อ</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
