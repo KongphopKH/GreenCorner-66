@@ -206,26 +206,24 @@ footer a:hover {
     }
 }
 
-/* ปรับปุ่มเลื่อนสไลด์ของ plantCarousel ให้ออกไปข้างนอกหน่อย */
+
 #plantCarousel {
     position: relative;
 }
 
-/* ลดความกว้าง hit-area และขยับออกด้านข้าง */
+
 #plantCarousel .carousel-control-prev,
 #plantCarousel .carousel-control-next {
-    width: 3rem;              /* ไม่ต้องกินพื้นที่ในแถบกว้าง ๆ */
-}
+    width: 3rem;              
 
 #plantCarousel .carousel-control-prev {
-    left: -2.5rem;            /* ดันออกนอกตัว carousel ด้านซ้าย */
-}
+    left: -2.5rem;           
 
 #plantCarousel .carousel-control-next {
-    right: -2.5rem;           /* ดันออกนอกตัว carousel ด้านขวา */
+    right: -2.5rem;          
 }
 
-/* มือถือ: เอากลับเข้ามาในเฟรม ป้องกันหลุดจอ */
+
 @media (max-width: 576px) {
     #plantCarousel .carousel-control-prev {
         left: 0.25rem;
@@ -234,4 +232,5 @@ footer a:hover {
         right: 0.25rem;
     }
 }
+
 
